@@ -9,51 +9,58 @@
 				document.getElementById("idNumber").value = Math.floor(Math.random() * 999999)
 		}
 		</script>
-
 	</head>
 	<body>
 		<h1 align="center", style="padding:25px"> Consentimiento informado</h1>
-				<p align="center", style="padding:25px">
+				<p align="left", style="padding:25px">
 					El propósito de este proyecto de investigación es conocer mejor en qué
 					zonas del cuerpo muestran dolor las/los pacientes con fibromialgia y
 					si existen pacientes con diferentes tipos de dolor dependiendo de
-					otras alteraciones asociadas. Debe saber que su participación en este
+					otras alteraciones asociadas.<br><br>Debe saber que su participación en este
 					estudio de investigación es completamente voluntaria. Puede decidir no
 					participar y, si acepta hacerlo, puede cambiar de parecer en cualquier
 					momento y retirarse sin necesidad de dar ninguna explicación y sin que
-					eso conlleve ningún perjuicio para usted.
-				El procedimiento consiste en rellenar una encuesta en línea que durará
-				aproximadamente 5 minutos. Las preguntas de la encuesta serán sobre los
-				niveles de dolor y sobre la presencia de síntomas comúnmente asociados a
-				 la fibromialgia (fatiga, problemas del sueño, alteraciones del estado
-				 de ánimo...). Posteriormente se le pedirá que pinte con el ratón del
-				 ordenador en las áreas del cuerpo en las que ha sentido dolor durante
-				 el último mes. Sus respuestas serán confidenciales y no se recopila
-				 información identificativa como su nombre, dirección de correo
-				 electrónico o dirección IP. Todos los datos se almacenan en un formato
-				 electrónico protegido por contraseña. Para ayudar a proteger su
-				 confidencialidad, las encuestas no contendrán información que le
-				 identifique personalmente. Los resultados de este estudio se utilizarán
-				  únicamente con fines de investigación.
-				Si tiene alguna pregunta sobre el estudio de investigación, puede enviar
-				 un correo electrónico a la siguiente dirección xxxx@gmail.com
-				     Una vez terminado el estudio los datos serán almacenados de forma
-						 anónima para su utilización futura o, si así lo desea, serán
-						 destruidos.<br>
-				 1- Deseo que los datos sean almacenados de forma anónima para su utilización futura.
-				  2- Deseo que los datos sean destruidos una vez terminado el estudio.
-				 Al hacer clic en el botón "Aceptar" que aparece a continuación, se indica que:
-				- ha leído y comprendido la información anterior.
-				- acepta participar voluntariamente.
-				- tiene al menos 18 años de edad.
-				Si no desea participar en este estudio de investigación, pulse el botón "Rechazar"<br><br><br>
-				para continuar debe pulsar el boton de aceptar
-			</p>
-			<form align="center">
+					eso conlleve ningún perjuicio para usted.<br><br>El procedimiento
+					consiste en rellenar una encuesta en línea que durará
+					aproximadamente 5 minutos. Las preguntas de la encuesta serán sobre los
+					niveles de dolor y sobre la presencia de síntomas comúnmente asociados a
+				  la fibromialgia (fatiga, problemas del sueño, alteraciones del estado
+				  de ánimo...). Posteriormente se le pedirá que pinte con el ratón del
+				  ordenador en las áreas del cuerpo en las que ha sentido dolor durante
+				  el último mes.<br><br>Sus respuestas serán confidenciales y no se recopila
+				  información identificativa como su nombre, dirección de correo
+				  electrónico o dirección IP. Todos los datos se almacenan en un formato
+				  electrónico protegido por contraseña. Para ayudar a proteger su
+				  confidencialidad, las encuestas no contendrán información que le
+				  identifique personalmente. Los resultados de este estudio se utilizarán
+				  únicamente con fines de investigación.<br><br>
+					Si tiene alguna pregunta sobre el estudio de investigación, puede enviar
+				 	un correo electrónico a la siguiente dirección: <em>estudiotopofm@gmail.com</em>
+				  <br><br>Una vez terminado el estudio los datos serán almacenados de forma
+					anónima para su utilización futura o, si así lo desea, serán
+					destruidos.
+
+
+					<form method="get", style="padding:25px" required>
+  					<input id="storage" type="radio" name="save" value="Save" required>
+						1- Deseo que los datos sean almacenados de forma anónima para su utilización futura.</input><br>
+  					<input id="storage2" type="radio" name="save" value="Del" required>
+						2- Deseo que los datos sean destruidos una vez terminado el estudio.</input><br>
+					</form>
+					</p>
+				<p align="left", style="padding:25px">
+				<br>Al hacer clic en el botón "Aceptar" que aparece a continuación, se indica que:
+				<br>- Ha leído y comprendido la información anterior.
+				<br>- Acepta participar voluntariamente.
+				<br>- Tiene al menos 18 años de edad.<br><br>
+				Si no desea participar en este estudio de investigación, pulse el botón "Rechazar"<br>
+				</p>
+			<form align="center", style="padding:15px">
 				<input type="hidden" name="idNum" id="idNumber" value="" />
 		    <button type="submit" formaction="tests/index.html" >Aceptar</button>
-				<button type="submit" formaction="goodbye.html" style="margin:0px 0px 0px 30px;color:red">Denegar</button>
+				<button type="submit" formaction="goodbye.html" style="color:red">Rechazar</button></p>
 		  </form>
+			</p>
 			<script type="text/javascript">
 				randNum();
 			</script>
