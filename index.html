@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script>
+			function randNum() {
+				document.getElementById("idNumber").value = Math.floor(Math.random() * 999999)
+		}
+		</script>
+
+	</head>
+	<body>
+		<h1 align="center", style="padding:25px"> Bienvenido</h1>
+			<p align="center", style="padding:25px"> A continuacion incluímos el consentimiento informado
+				...<br><br><br>
+				para continuar debe pulsar el boton de aceptar
+			</p>
+			<form align="center">
+				<input type="hidden" name="idNum" id="idNumber" value="" />
+		    <button type="submit" formaction="tests/index.html" >Aceptar</button>
+				<button type="submit" formaction="goodbye.html" style="margin:0px 0px 0px 30px;color:red">Denegar</button>
+		  </form>
+			<script type="text/javascript">
+				randNum();
+			</script>
+		</body>
+</html>

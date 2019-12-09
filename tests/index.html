@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Experimento2</title>
+		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+		<script>
+		function getId()
+		{
+		       var query = window.location.search.substring(1);
+		       var pair = query.split("=");
+					 document.getElementById("IdNum").value = pair[1];
+					 document.getElementById("idNum2").value = pair[1];
+
+		}
+
+		function showContinue() {
+			var f1 = document.getElementById("f1");
+			var f2 = document.getElementById("f2");
+			var f3 = document.getElementById("f3");
+			var f4 = document.getElementById("f4");
+			var f5 = document.getElementById("f5");
+			var f6 = document.getElementById("f6");
+			var f7 = document.getElementById("f7");
+			var f8 = document.getElementById("f8");
+			const isF1 = f1.checkValidity();
+			const isF2 = f2.checkValidity();
+			const isF3 = f3.checkValidity();
+			const isF4 = f4.checkValidity();
+			const isF5 = f5.checkValidity();
+			const isF6 = f6.checkValidity();
+			const isF7 = f7.checkValidity();
+			const isF8 = f8.checkValidity();
+			if (isF1 && isF2 && isF3 && isF4 && isF5 && isF6 && isF7 && isF8){
+		    document.getElementById("send").style.display="none";
+		    document.getElementById("continue").style.display="inline";
+			}
+		}
+	</script>
+
+	</head>
+	<body>
+		<form action="../paint/index.html" method="get">
+			<input id="idNum2" type="hidden" name="idNum2" value='' />
+			<button id='continue' type="submit" style="display: none; position: fixed;
+    bottom: 50%; left: 50%; font-size : 25px; color:red; z-index: 1;"/>Continuar</button>
+		</form>
+
+		<form action="https://send.pageclip.co/OM50Bp0uXbssBITF3JKsac306pcBSdX4" class="pageclip-form" method="post">
+		  <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
+			<fieldset>
+				<label>Edad en años<input id='f1' class="reqAns" type="text" name="Edad" required /></label> <br>
+				<label>Peso en Kg<input id='f2' class="reqAns" type="text" name="Peso" required /></label> <br>
+				<label>Número medio de minutos en los que realiza deporte/actividad física al día<input id='f3' class="reqAns" type="text" name="Deporte" required /></label> <br>
+				<label>Diagnóstico de FM?<input id='f4' class="reqAns" type="radio" name="diagnostico" value="Si">Si</label>
+				<label><input class="reqAns" type="radio" name="diagnostico" value="No" required />No</label><br>
+				<label><br>Si ha respondido "Si" a la pregunta anterior:<br>Años desde que ha sido diagnosticad@ de FM<input type="text" name="AnosD"/></label><br>
+
+			</fieldset>
+
+			<fieldset>
+			<div class="bdi" style="padding:40px">Intrucciones del test</div>
+			<ol class="questions">
+				<li class="item1">Q1 de BDI</li>
+				<div  class="reqAns">
+					<div><label><input id='f5' type="radio" name="AnswerQ1" value="1">R1</label></div>
+					<div><label><input type="radio" name="AnswerQ1" value="2">R2</label></div>
+					<div><label><input type="radio" name="AnswerQ1" value="3">R3</label></div>
+					<div><label><input type="radio" name="AnswerQ1" value="4" required >R4</label></div>
+				</div>
+				<li class="item2">Q2 de BDI</li>
+				<div class="reqAns">
+					<div><label><input id='f6' type="radio" name="AnswerQ2" value="1">R1</label></div>
+					<div><label><input type="radio" name="AnswerQ2" value="2">R2</label></div>
+					<div><label><input type="radio" name="AnswerQ2" value="3">R3</label></div>
+					<div><label><input type="radio" name="AnswerQ2" value="4" required >R4</label></div>
+				</div>
+				<li class="item3">Q3 de BDI</li>
+				<div class="reqAns">
+					<div><label><input id='f7' type="radio" name="AnswerQ3" value="1">R1</label></div>
+					<div><label><input type="radio" name="AnswerQ3" value="2">R2</label></div>
+					<div><label><input type="radio" name="AnswerQ3" value="3">R3</label></div>
+					<div><label><input type="radio" name="AnswerQ3" value="4" required >R4</label></div>
+				</div>
+				<li class="item4">Q4 de BDI</li>
+				<div class="reqAns">
+					<div><label><input id='f8' type="radio" name="AnswerQ4" value="1">R1</label></div>
+					<div><label><input type="radio" name="AnswerQ4" value="2">R2</label></div>
+					<div><label><input type="radio" name="AnswerQ4" value="3">R3</label></div>
+					<div><label><input type="radio" name="AnswerQ4" value="4" required >R4</label></div>
+				</div>
+				</fieldset>
+				<fieldset>
+				<li class="vas1" style="padding:10px">Puntua de 0 a 10 el dolor en el último mes</li>
+				<div class="reqAns">
+					<div>
+						<label><input id='f9' type="radio" name="vas1" value="0">0</label>
+						<label><input type="radio" name="vas1" value="1">1</label>
+						<label><input type="radio" name="vas1" value="2">2</label>
+						<label><input type="radio" name="vas1" value="3">3</label>
+						<label><input type="radio" name="vas1" value="4">4</label>
+						<label><input type="radio" name="vas1" value="5">5</label>
+						<label><input type="radio" name="vas1" value="6">6</label>
+						<label><input type="radio" name="vas1" value="7">7</label>
+						<label><input type="radio" name="vas1" value="8">8</label>
+						<label><input type="radio" name="vas1" value="9">9</label>
+						<label><input type="radio" name="vas1" value="10" required >10</label>
+					</div>
+				</div>
+				<br>
+				<li class="vas2" style="padding:10px">Puntua de 0 a 10 la fatiga en el último mes</li>
+				<div class="reqAns">
+					<div>
+						<label><input id='f9' type="radio" name="vas1" value="0">0</label>
+						<label><input type="radio" name="vas2" value="1">1</label>
+						<label><input type="radio" name="vas2" value="2">2</label>
+						<label><input type="radio" name="vas2" value="3">3</label>
+						<label><input type="radio" name="vas2" value="4">4</label>
+						<label><input type="radio" name="vas2" value="5">5</label>
+						<label><input type="radio" name="vas2" value="6">6</label>
+						<label><input type="radio" name="vas2" value="7">7</label>
+						<label><input type="radio" name="vas2" value="8">8</label>
+						<label><input type="radio" name="vas2" value="9">9</label>
+						<label><input type="radio" name="vas2" value="10" required >10</label>
+					</div>
+				</div>
+			</fieldset>
+			<input id='IdNum' type="hidden" name="version" value="" />
+		  <!-- This button will have a loading spinner. Keep the inner span for best results. -->
+		  <button id='send' class="pageclip-form__submit" onclick="showContinue();">
+			<!-- <button id='send' class="pageclip-form__submit"> -->
+				<span>Enviar</span>
+		  </button>
+		</form>
+
+
+		<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			getId();
+			var form = document.querySelector('.pageclip-form')
+			Pageclip.form(form, {
+			  onSubmit: function (event) { },
+			  onResponse: function (error, response) { },
+			  successTemplate: '<div class="pageclip-form__success__message">Gracias!<br> Haga <em>click</em> con el ratón y pulse el botón continuar<br> para pasar a la segunda parte</div>'
+			})
+
+		</script>
+	</body>
+</html>

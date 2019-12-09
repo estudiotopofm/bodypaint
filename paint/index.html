@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Paint</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+	</head>
+    <body onload="init()">
+		<canvas class= "canv" id="can0" width="444" height="621"></canvas>
+    <canvas class= "canv" id="can" width="444" height="621"
+				<p>Unfortunately, your browser is currently unsupported by our web application.
+					We are sorry for the inconvenience. Please use one of the supported browsers listed below</p>
+					<p>Supported browsers: <a
+						href="https://www.google.com/chrome/">Chrome</a>, <a
+						href="https://www.mozilla.org">Firefox</a>, <a
+						href="https://www.apple.com/safari/">Safari</a>.</p>
+		></canvas>
+		<div id="instrucciones">
+			<p> Pinta con el ratón las áreas del cuerpo en las que has sentido dolor durante el último mes.
+				Cuanto más tiempo mantengas pulsado más intenso será el color rojo, lo que significa que el dolor ha sido
+				más intenso. <br><strong>No te preocupes si te pasas del borde de las siluetas.</strong><br>
+				Puedes modificar el ancho del pincel en la barra de abajo. <br>Pulsa "Borrar" si deseas borrar algunha parte 
+				en concreto. Luego vuelve a pulsar "Pintar" para continuar coloreando.<br>Si deseas borrar todo y volver a
+				empezar pulsa el boton "Borrar todo"Una vez terminado pulsa el botón "Enviar". </p>
+		</div>
+		<div id="linepanel">
+			<p>Ancho de pincel</p>
+			<form>
+				<input type="range" id="myRange" name="amountRange" value="20" min="5" max="35" oninput="this.form.amountInput.value=this.value" onclick="lineWidthRange()">
+				<!-- <div id="sliderInput">
+				</p><input type="number" name="amountInput" value="20" min="5" max="35" oninput="this.form.amountRange.value=this.value" />
+				</div> -->
+			</form>
+			<!-- <form action="https://send.pageclip.co/OM50Bp0uXbssBITF3JKsac306pcBSdX4" class="pageclip-form" method="post"> -->
+			<form id="submitForm" method="POST" onsubmit="save();">
+				<input id="idNum" name="id" type="hidden" value="">
+				<input id="inp_img" name="img" type="hidden" value="">
+				<input id="bt_upload" type="submit" value="Enviar">
+			</form>
+      <input type="button" value="Borrar Todo" id="clr" onclick="erase()">
+			<input type="button" value="Pintar" id="red" onclick="color(this)">
+			<input type="button" value="Borrar" id="white" onclick="color(this)">
+		</div>
+
+			<script src="paint.js"></script>
+			<!-- <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script> -->
+    </body>
+    </html>
