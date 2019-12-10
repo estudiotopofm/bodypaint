@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
-
+		<title>Consentimiento</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<script>
 			function randNum() {
-				document.getElementById("idNumber").value = Math.floor(Math.random() * 999999)
+				save = document.getElementById("store").checked;
+				if (save){
+					document.getElementById("idNumber").value = (Math.floor(Math.random() * 999999)+10000000)
+				}else {
+					document.getElementById("idNumber").value = Math.floor(Math.random() * 999999)
+				}
 		}
 		</script>
 	</head>
@@ -39,30 +44,23 @@
 				  <br><br>Una vez terminado el estudio los datos serán almacenados de forma
 					anónima para su utilización futura o, si así lo desea, serán
 					destruidos.
-
-
-					<form method="get", style="padding:25px" required>
-  					<input id="storage" type="radio" name="save" value="Save" required>
-						1- Deseo que los datos sean almacenados de forma anónima para su utilización futura.</input><br>
-  					<input id="storage2" type="radio" name="save" value="Del" required>
-						2- Deseo que los datos sean destruidos una vez terminado el estudio.</input><br>
-					</form>
-					</p>
-				<p align="left", style="padding:25px">
+					<form onsubmit="randNum()" style="padding-left:25px">
+					<input type="hidden" name="idNum" id="idNumber" value="", style="padding:25px" />
+					<input type="radio" name="save" id="store" required />
+					<label for="store">1- Deseo que los datos sean almacenados de forma anónima para su utilización futura.</label><br />
+					<input type="radio" name="save" id="delete"/>
+					<label for="delete">2- Deseo que los datos sean destruidos una vez terminado el estudio.</label><br />
+				<p>
 				<br>Al hacer clic en el botón "Aceptar" que aparece a continuación, se indica que:
 				<br>- Ha leído y comprendido la información anterior.
 				<br>- Acepta participar voluntariamente.
 				<br>- Tiene al menos 18 años de edad.<br><br>
 				Si no desea participar en este estudio de investigación, pulse el botón "Rechazar"<br>
 				</p>
-			<form align="center", style="padding:15px">
-				<input type="hidden" name="idNum" id="idNumber" value="" />
+
 		    <button type="submit" formaction="tests/index.html" >Aceptar</button>
 				<button type="submit" formaction="goodbye.html" style="color:red">Rechazar</button></p>
 		  </form>
 			</p>
-			<script type="text/javascript">
-				randNum();
-			</script>
 		</body>
 </html>
