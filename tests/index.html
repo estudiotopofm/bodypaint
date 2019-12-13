@@ -46,7 +46,7 @@
     bottom: 50%; left: 50%; font-size : 25px; color:red; z-index: 1;"/>Continuar</button>
 		</form>
 
-		<form action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w" class="pageclip-form" method="post">
+		<form id='fullform' action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w" class="pageclip-form" method="post">
 		  <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
 			<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
 				<label for='f1'>1. Edad (en años):<input id='f1' class="reqAns" type="text" name="Edad" maxlength="3" required /></label><br>
@@ -422,11 +422,15 @@
 		<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 		<script type="text/javascript">
 			getId();
+			var data = document.getElementById('fullform').value;
+			console.log(data)
 			var form = document.querySelector('.pageclip-form')
+			console.log(form)
 			Pageclip.form(form, {
 			  onSubmit: function (event) { },
 			  onResponse: function (error, response) { },
 			  successTemplate: '<div class="pageclip-form__success__message">Gracias!<br> Haga <em>click</em> con el ratón y pulse el botón continuar<br> para pasar a la segunda parte</div>'
+				window.location.replace("http://www.w3schools.com");
 			})
 			</script>
 	</body>
