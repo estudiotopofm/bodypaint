@@ -40,16 +40,16 @@
 	<!-- <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script> -->
 	</head>
 	<body>
-		<form action="../paint/index.html" method="get">
+		<!-- <form action="../paint/index.html" method="get">
 			<input id="idNum2" type="hidden" name="idNum2" value='' />
 			<button id='continue' type="submit" style="display: none; position: fixed;
     bottom: 50%; left: 50%; font-size : 25px; color:red; z-index: 1;"/>Continuar</button>
-		</form>
+		</form> -->
+		<form id='fullform' action="../paint/index.html" method="GET">
+		<!-- <form id='fullform' action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w" class="pageclip-form" method="post"> -->
 
-		<form id='fullform' action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w" class="pageclip-form" method="post">
-		  <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
 			<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
-				<label for='f1'>1.OLA! Edad (en años):<input id='f1' class="reqAns" type="text" name="Edad" maxlength="3" required /></label><br>
+				<label for='f1'>1. Edad (en años):<input id='f1' class="reqAns" type="text" name="Edad" maxlength="3" required /></label><br>
 				<label for='f2'>2. Sexo: <input id='f2' class="reqAns" type="radio" name="sexo" value="Mujer" style="margin-left: 10px" required>Mujer   </label>
 				<label for='f2'><input id='f2' class="reqAns" type="radio" name="sexo" value="Hombre" style="margin-left: 10px">Hombre   </label>
 				<label for='f2'><input id='f2' class="reqAns" type="radio" name="sexo" value="Otro" style="margin-left: 10px">Otro</label><br>
@@ -418,8 +418,11 @@
 				<span><strong>Enviar</strong></span>
 		  </button>
 			</div>
+			<div>
+				<button>Continuar</button>
+			</div>
 		</form>
-		<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+		<!-- <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 		<script type="text/javascript">
 			getId();
 			var data = document.getElementById('fullform').value;
@@ -432,6 +435,6 @@
 			  successTemplate: '<div class="pageclip-form__success__message">Gracias!<br> Haga <em>click</em> con el ratón y pulse el botón continuar<br> para pasar a la segunda parte</div>'
 				window.location.replace("http://www.w3schools.com");
 			})
-			</script>
+			</script> -->
 	</body>
 </html>
