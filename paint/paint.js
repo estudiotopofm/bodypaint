@@ -95,7 +95,7 @@ function save() {
 				document.getElementById('inp_img').value = dataURL;
 				document.getElementById('idNum').value = query;
 				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
-				var form document.getElementById('submitForm')
+				var form = document.getElementById('submitForm');
 				Pageclip.form(form, {
 				  onSubmit: function (event) { },
 				  onResponse: function (error, response) { },
