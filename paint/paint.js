@@ -93,8 +93,8 @@ function save() {
 				var query = window.location.search.substring(1);
 				var pair = query.split("=");
 				document.getElementById('inp_img').value = dataURL;
-				document.getElementById('idNum').value = pair[1];
-				document.getElementById('submitForm').action="https://usebasin.com/f/2cf9ca060022"
+				document.getElementById('idNum').value = query;
+				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w"
 		}
 }
 
