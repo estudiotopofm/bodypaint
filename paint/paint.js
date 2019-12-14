@@ -35,8 +35,6 @@ function init() {
 
 
 
-
-
 function make_base()
 {
   base_image = new Image();
@@ -86,18 +84,6 @@ function erase() {
 		}
 }
 
-function save() {
-		var m2 = confirm("Esta será la imagen final que se enviará. Desea proceder?");
-		if (m2) {
-				var dataURL = canvas.toDataURL();
-				var query = window.location.search.substring(1);
-				var pair = query.split("=");
-				document.getElementById('inp_img').value = dataURL;
-				document.getElementById('idNum').value = query;
-				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
-		}
-}
-
 function sleep(milliseconds) {
   var start = new Date().getTime();
   for (var i = 0; i < 1e7; i++) {
@@ -129,5 +115,17 @@ function findxy(res, e) {
 						draw();
 						sleep(90)
 				}
+		}
+}
+
+function save() {
+		var m2 = confirm("Esta será la imagen final que se enviará. Desea proceder?");
+		if (m2) {
+				var dataURL = canvas.toDataURL();
+				var query = window.location.search.substring(1);
+				var pair = query.split("=");
+				document.getElementById('inp_img').value = dataURL;
+				document.getElementById('idNum').value = query;
+				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
 		}
 }
