@@ -29,7 +29,7 @@
 			<form>
 				<input type="range" id="myRange" name="amountRange" value="20" min="5" max="35" oninput="this.form.amountInput.value=this.value" onclick="lineWidthRange()">
 			</form>
-			<form id="submitForm" method="POST" onsubmit="save();">
+			<form id="submitForm" method="POST" onsubmit="save();" target= "_blank">
 				<input id="idNum" name="id" type="hidden" value="">
 				<input id="inp_img" name="img" type="hidden" value="">
 				<input id="bt_upload" type="submit" value="Enviar">
