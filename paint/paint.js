@@ -126,7 +126,8 @@ function save() {
 				document.getElementById('inp_img').value = dataURL;
 				document.getElementById('idNum').value = query;
 				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
-				var win = window.open("https://www.google.com", '_blank');
-  			win.focus();
+				document.getElementById("submitForm").submit();
+				// var win = window.open("https://www.google.com", '_blank');
+  			// win.focus();
 		}
 }
