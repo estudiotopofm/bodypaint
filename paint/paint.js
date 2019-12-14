@@ -77,13 +77,6 @@ function draw() {
 
 }
 
-function erase() {
-		var m = confirm("Seguro que desea borrar todo?");
-		if (m) {
-				ctx.clearRect(0, 0, w, h);
-		}
-}
-
 function sleep(milliseconds) {
   var start = new Date().getTime();
   for (var i = 0; i < 1e7; i++) {
@@ -115,6 +108,13 @@ function findxy(res, e) {
 						draw();
 						sleep(90)
 				}
+		}
+}
+
+function erase() {
+		var m = confirm("Seguro que desea borrar todo?");
+		if (m) {
+				ctx.clearRect(0, 0, w, h);
 		}
 }
 
