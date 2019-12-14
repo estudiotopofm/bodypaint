@@ -123,7 +123,6 @@ function save() {
 		if (m2) {
 				var dataURL = canvas.toDataURL();
 				var query = window.location.search.substring(1);
-				var pair = query.split("=");
 				document.getElementById('inp_img').value = dataURL;
 				document.getElementById('idNum').value = query;
 				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
