@@ -128,7 +128,7 @@ function save() {
 				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
 				document.getElementById("submitForm").submit();
 				//window.alert("Su información ha sido enviada. Muchas gracias por su colaboración");
-				var win = window.open("../finalMess.html", '_self');
-  			win.focus();
+				//var win = window.open("../finalMess.html", '_self');
+
 		}
 }
