@@ -125,7 +125,8 @@ function save() {
 				var query = window.location.search.substring(1);
 				document.getElementById('inp_img').value = dataURL;
 				document.getElementById('idNum').value = query;
-				document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
+				//document.getElementById('submitForm').action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w";
+				document.getElementById('submitForm').action="https://usebasin.com/f/2cf9ca060022"
 				document.getElementById("submitForm").submit();
 				//window.alert("Su información ha sido enviada. Muchas gracias por su colaboración");
 				//var win = window.open("../finalMess.html", '_self');
