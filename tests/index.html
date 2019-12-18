@@ -11,68 +11,45 @@
 			var pair = query.split("=");
 			document.getElementById("IdNum").value = pair[1];
 			document.getElementById("idNum2").value = pair[1];
-
-			var f1 = document.getElementById("f1");
-			var f2 = document.getElementById("f2");
-			var f3 = document.getElementById("f3");
-			var f4 = document.getElementById("f4");
-			var f5 = document.getElementById("f5");
-			var f6 = document.getElementById("f6");
-			var f7 = document.getElementById("f7");
-			var f8 = document.getElementById("f8");
-			const isF1 = f1.checkValidity();
-			const isF2 = f2.checkValidity();
-			const isF3 = f3.checkValidity();
-			const isF4 = f4.checkValidity();
-			const isF5 = f5.checkValidity();
-			const isF6 = f6.checkValidity();
-			const isF7 = f7.checkValidity();
-			const isF8 = f8.checkValidity();
-			if (isF1 && isF2 && isF3 && isF4 && isF5 && isF6 && isF7 && isF8){
+			var ff = document.getElementById("fullform");
+			const isFf = ff.checkValidity();
+			if (isFf){
 		    document.getElementById("send").style.display="none";
 		    document.getElementById("continue").style.display="inline";
 			}
 		}
 	</script>
-	<!-- <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script> -->
 	</head>
 	<body>
-		<!-- <form action="../paint/index.html" method="get">
-			<input id="idNum2" type="hidden" name="idNum2" value='' />
-			<button id='continue' type="submit" style="display: none; position: fixed;
-    bottom: 50%; left: 50%; font-size : 25px; color:red; z-index: 1;"/>Continuar</button>
-		</form> -->
+
 		<form id='fullform' action="../paint/index.html" method="GET">
-		<!-- <form id='fullform' action="https://send.pageclip.co/kShRurKKnsNkhkEnbHrXx8ShfltuyC9w" class="pageclip-form" method="post"> -->
 
 			<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
 				<label for='f1'>1. Edad (en años):<input id='f1' class="reqAns" type="number" name="Edad" min="10" max="150" required /></label><br>
-				<label for='f2'>2. Sexo: <input id='f2' class="reqAns" type="radio" name="sexo" value="Mujer" style="margin-left: 10px" required>Mujer   </label>
-				<label for='f2'><input id='f2' class="reqAns" type="radio" name="sexo" value="Hombre" style="margin-left: 10px">Hombre   </label>
-				<label for='f2'><input id='f2' class="reqAns" type="radio" name="sexo" value="Otro" style="margin-left: 10px">Otro</label><br>
-				<label for='f3'>3. Nivel de estudios: <input id='f3' class="reqAns" type="radio" name="estudios" value="Ninguno" style="margin-left: 10px" required>Ninguno</label>
-				<label for='f3'><input id='f3' class="reqAns" type="radio" name="estudios" value="Elementales" style="margin-left: 10px">Elementales</label>
-				<label for='f3'><input id='f3' class="reqAns" type="radio" name="estudios" value="Bachillerato" style="margin-left: 10px">Bachillerato</label>
-				<label for='f3'><input id='f3' class="reqAns" type="radio" name="estudios" value="FormacionProfesional" style="margin-left: 10px">Formación Profesional</label>
-				<label for='f3'><input id='f3' class="reqAns" type="radio" name="estudios" value="Universitarios" style="margin-left: 10px">Universitarios</label><br>
+				2. Sexo: <input id='f2' class="reqAns" type="radio" name="sexo" value="Mujer" style="margin-left: 10px" required>Mujer
+				<input id='f2' class="reqAns" type="radio" name="sexo" value="Hombre" style="margin-left: 10px">Hombre
+				<input id='f2' class="reqAns" type="radio" name="sexo" value="Otro" style="margin-left: 10px">Otro<br>
+				3. Nivel de estudios: <input id='f3' class="reqAns" type="radio" name="estudios" value="Ninguno" style="margin-left: 10px" required>Ninguno
+				<input id='f3' class="reqAns" type="radio" name="estudios" value="Elementales" style="margin-left: 10px">Elementales
+				<input id='f3' class="reqAns" type="radio" name="estudios" value="Bachillerato" style="margin-left: 10px">Bachillerato
+				<input id='f3' class="reqAns" type="radio" name="estudios" value="FormacionProfesional" style="margin-left: 10px">Formación Profesional
+				<input id='f3' class="reqAns" type="radio" name="estudios" value="Universitarios" style="margin-left: 10px">Universitarios<br>
 
 				<label for='f4'>4. Peso (en Kg):<input id='f4' class="reqAns" type="number" name="Peso" min="20" max="300" required /></label> <br>
 				<label for='f5'>5. Estatura (en cms):<input id='f5' class="reqAns" type="number" name="Estatura" min="50" max="250" required /></label> <br>
-				<label for='f6'>6. Tiene diagnóstico de FM? <input id='f6' class="reqAns" type="radio" name="diagnostico" value="Si" style="margin-left: 10px">Si</label>
-				<label for='f6'><input class="reqAns" type="radio" name="diagnostico" value="No" style="margin-left: 10px" required />No</label><br>
+				6. Tiene diagnóstico de FM? <input id='f6' class="reqAns" type="radio" name="diagnostico" value="Si" style="margin-left: 10px">Si
+				<input class="reqAns" type="radio" name="diagnostico" value="No" style="margin-left: 10px" required />No<br>
 				<label for='f7'>7. Si ha respondido "Si" a la pregunta anterior:<br>&nbsp;&nbsp;&nbsp;&nbsp;Años desde que ha sido diagnosticado de FM:<input type="number" name="AnosD" min="0" max="99"/></label><br>
-				¿Cuántos años hace (ou cuantos años tenía??) desde que ha comenzado a padecer síntomas de la FM:<input type="number" name="AnosS" min="0" max="99"/></label><br>
-				<label for='f8'>8. Número medio de minutos en los que realiza deporte/actividad física al día:<input id='f8' class="reqAns" type="number" name="Deporte" min="0" max="500" required /> <br>
-				<label for='f9'>9. Código Postal:<input id='f9' class="reqAns" type="number" name="CP" max="99999"required /></label> <br>
+				&nbsp;&nbsp;¿Cuántos años hace (ou cuantos años tenía??) desde que ha comenzado a padecer síntomas de la FM:<input type="number" name="AnosS" min="0" max="99"/></label><br>
+				<label for='f8'>8. Número medio de minutos en los que realiza deporte/actividad física al día:<input id='f8' class="reqAns" type="number" name="Deporte" min="0" max="500" required /></label><br>
+				<label for='f9'>9. Código Postal:<input id='f9' class="reqAns" type="number" name="CP" max="99999" size=5 required /></label> <br>
 
 				<label for='f10'>10. Nivel de consumo de medicación:<br> <input id='f10' class="reqAns" type="radio" name="meds" value="No" style="margin-left: 10px" required>No tomo o apenas tomo medicación para el dolor, solamente en ocasiones puntuales. </label>
 				<label for='f10'><input id='f10' class="reqAns" type="radio" name="meds" value="Poco" style="margin-left: 10px">Tomo medicación para el dolor o la fibromialgia de forma habitual, aunque creo que es una cantidad moderada.</label>
-				<label for='f10'><input id='f10' class="reqAns" type="radio" name="meds" value="Mucho" style="margin-left: 10px">Tomo constantemente mucha medicación para paliar el dolor o los síntomas de la fibromialgia.</label>
-
-				<label for='f10'>Si lo desea, puede escribir aquí que medicación consume: <input id='f11' type="text" name="medsE" size=50>
+				<label for='f10'><input id='f10' class="reqAns" type="radio" name="meds" value="Mucho" style="margin-left: 10px">Tomo constantemente mucha medicación para paliar el dolor o los síntomas de la fibromialgia.</label><br>
+				&nbsp;&nbsp;Si lo desea, puede escribir aquí que medicación consume actualmente: <input id='f11' type="text" name="medsE" size=50>
 
 			</fieldset>
-
 				<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
 					<p>Señale la categoría que mejor describa sus habilidades o sentimientos<strong> durante la última semana</strong>.
 					Si usted nunca ha realizado alguna actividad de las preguntadas, déjela en blanco</p>
