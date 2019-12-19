@@ -5,6 +5,14 @@
 		<title>Pintar</title>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- <script>
+		var OSName="Unknown OS";
+		if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
+		if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
+		if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
+		if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+		console.log(OSName);
+		</script> -->
 	</head>
     <body onload="init()">
 		<canvas class= "canv" id="can0" width="444" height="621"></canvas>
@@ -37,9 +45,8 @@
 				<input id="inp_img" name="img" type="hidden" value="">
 				<input id="bt_upload" type="button" value="Enviar">
 			</form>
-      <!-- <input type="button" value="Borrar Todo" id="clr" onclick="erase()"> -->
 		</div>
 			<script src="paint.js"></script>
-			<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
     </body>
     </html>
