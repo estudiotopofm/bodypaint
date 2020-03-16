@@ -108,7 +108,7 @@ function findxy(res, e) {
 						draw();
 						// sleep(90)
 						if (x=="red"){
-							sleep(100)
+							sleep(80)
 						}
 				}
 		}
