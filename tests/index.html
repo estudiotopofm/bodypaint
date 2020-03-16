@@ -25,7 +25,8 @@
 		<form id='fullform' action="../paint/index.html" method="GET">
 
 			<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
-				<label for='f1'>1. Edad (en años):<input id='f1' class="reqAns" type="number" name="Edad" min="10" max="150" required /></label><br>
+				<label for='f1'>1. Año de nacimiento:<input id='f1' class="reqAns" type="number" name="Edad" min="1920" max="2003" required /></label><br>
+				<label for='f1'>1.2 Mes de nacimiento:<input id='f112' class="reqAns" type="number" name="Mes" min="1" max="12" required /></label><br>
 				2. Sexo: <input id='f2' class="reqAns" type="radio" name="sexo" value="Mujer" style="margin-left: 10px" required> Mujer
 				<input id='f2' class="reqAns" type="radio" name="sexo" value="Hombre" style="margin-left: 10px"> Hombre
 				<input id='f2' class="reqAns" type="radio" name="sexo" value="Otro" style="margin-left: 10px"> Otro<br>
@@ -384,6 +385,57 @@
 						<label><input type="radio" name="vas12" value="8" style="margin-left: 10px">8</label>
 						<label><input type="radio" name="vas12" value="9" style="margin-left: 10px">9</label>
 						<label><input type="radio" name="vas12" value="10" style="margin-left: 10px" required >10</label>
+					</div>
+				</div>
+
+				<li class="vas13" style="padding:10px">¿Ha sufrido algún episodio de violencia física o psicológica a lo largo de su vida?</li>
+				<div class="reqAns">
+					<div>
+						<label><input id='vasAb13' type="radio" name="vas13" value="0" style="margin-left: 10px">Nunca</label>
+						<label><input type="radio" name="vas13" value="1" style="margin-left: 10px">Alguna vez</label>
+						<label><input type="radio" name="vas13" value="2" style="margin-left: 10px" required >Constantemente</label>
+					</div>
+				</div>
+
+				<li class="vas14" style="padding:10px">¿Ha sufrido algún episodio de abusos sexuales a lo largo de su vida?</li>
+				<div class="reqAns">
+					<div>
+						<label><input id='vasAb14' type="radio" name="vas14" value="0" style="margin-left: 10px">Nunca</label>
+						<label><input type="radio" name="vas14" value="1" style="margin-left: 10px">Alguna vez</label>
+						<label><input type="radio" name="vas14" value="2" style="margin-left: 10px" required >Constantemente</label>
+					</div>
+				</div>
+
+				<li class="vas14" style="padding:10px">¿Ha sufrido algún episodio de abusos sexuales a lo largo de su vida?</li>
+				<div class="reqAns">
+					<div>
+						<label><input id='vasAb14' type="radio" name="vas14" value="0" style="margin-left: 10px">Nunca</label>
+						<label><input type="radio" name="vas14" value="1" style="margin-left: 10px">Alguna vez</label>
+						<label><input type="radio" name="vas14" value="2" style="margin-left: 10px" required >Constantemente</label>
+					</div>
+				</div>
+
+
+				<li class="vas15" style="padding:10px">¿Cree que su fibromialgia puede ser por causa de un traumatismo (ej. accidente de tráfico, golpe, caída...), una intervención quirúrgica o una enfermedad médica?</li>
+				<div class="reqAns">
+					<div>
+						<label><input id='vasAb15' type="radio" name="vas15" value="0" style="margin-left: 10px">No</label>
+						<label><input type="radio" name="vas15" value="1" style="margin-left: 10px">No lo sé</label>
+						<label><input type="radio" name="vas15" value="2" style="margin-left: 10px" required >Si</label>
+					</div>
+				</div>
+				&nbsp;&nbsp;Si ha respondido "Si" a la pregunta anterior, por favor especifique cuál cree que ha sido la causa de su fibromialgia: <input id='vas15desc' type="text" name="acci" size=50>
+
+				<li class="vas16" style="padding:10px">¿Cuantas personas hay en su unidad familiar? Incluyéndose a usted</li>
+				<div class="reqAns">
+					<div>
+						<label><input id='vasAb16' type="radio" name="vas16" value="1" style="margin-left: 10px">1</label>
+						<label><input type="radio" name="vas16" value="2" style="margin-left: 10px">2</label>
+						<label><input type="radio" name="vas16" value="3" style="margin-left: 10px">3</label>
+						<label><input type="radio" name="vas16" value="4" style="margin-left: 10px">4</label>
+						<label><input type="radio" name="vas16" value="5" style="margin-left: 10px">5</label>
+						<label><input type="radio" name="vas16" value="6" style="margin-left: 10px">6</label>
+						<label><input type="radio" name="vas16" value="7" style="margin-left: 10px" required >Más de 6</label>
 					</div>
 				</div>
 
