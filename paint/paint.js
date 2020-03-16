@@ -53,7 +53,7 @@ function color(obj) {
 		switch (obj.id) {
 				case "red":
 						x = "red";
-						y = 0.1
+						y = 0.15
 						ctx.globalCompositeOperation = "source-over";
 						break;
 				case "white":
@@ -106,7 +106,10 @@ function findxy(res, e) {
 						currX = e.clientX - canvas.offsetLeft;
 						currY = e.clientY - canvas.offsetTop;
 						draw();
-						sleep(90)
+						// sleep(90)
+						if (x=="red"){
+							sleep(100)
+						}
 				}
 		}
 }
