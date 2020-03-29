@@ -11,7 +11,6 @@
 			var pair = query.split("=");
 			document.getElementById("IdNum").value = pair[1];
 			document.getElementById("idNum2").value = pair[1];
-
 			var ff = document.getElementById("fullform");
 			const isFf = ff.checkValidity();
 			if (isFf){
@@ -601,6 +600,7 @@
 
 			</fieldset>
 			<input id='IdNum' type="hidden" name="IDparticipant" value="" />
+			<input id='computer' type="hidden" name="systemPart" value="" />
 		  <div class="wrapper" style="text-align: center; padding:25px">
 		  <button id='send' onclick="showContinue();">
 			<!-- <button id='send' class="pageclip-form__submit"> -->
@@ -608,25 +608,13 @@
 		  </button>
 			</div>
 		</form>
-		<!-- <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
-		<script type="text/javascript">
-			getId();
-			var data = document.getElementById('fullform').value;
-			console.log(data)
-			var form = document.querySelector('.pageclip-form')
-			console.log(form)
-			Pageclip.form(form, {
-			  onSubmit: function (event) { },
-			  onResponse: function (error, response) { },
-			  successTemplate: '<div class="pageclip-form__success__message">Gracias!<br> Haga <em>click</em> con el ratón y pulse el botón continuar<br> para pasar a la segunda parte</div>'
-				window.location.replace("http://www.w3schools.com");
-			})
-			</script> -->
+
 			<script>
 				var solic = window.location.search.substring(1);
 				var par = solic.split("=");
 				par = par[1]
 				document.getElementById("demo").innerHTML = par.substring(0,7);
+				document.getElementById("computer").value = navigator.userAgent;
 			</script>
 	</body>
 </html>
