@@ -21,10 +21,13 @@
 	</script>
 	</head>
 	<body>
-		<h3>¿Ha cubierto este mismo cuestionario con anterioridad? Si es así, por favor indique el número de identificación que le dimos la vez anterior</h3>
+		<h3></h3>
 		<form id='fullform' action="../paint/index.html" method="GET">
 
 			<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
+				- ¿Ha cubierto este mismo cuestionario con anterioridad? (entre marzo y agosto) <input id='fase1' class="reqAns" type="radio" name="diagnostico" value="Si" style="margin-left: 10px"> Sí
+				<input class="reqAns" type="radio" name="diagnostico" value="No" style="margin-left: 10px" required /> No<br>
+				<label for='f7'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si ha respondido "Sí", por favor indique el número de identificación que le dimos la vez anterior: <input type="number" name="ID_fase1" min="0" max="999999999"/></label><br>
 				<label for='f1'>- Año de nacimiento:<input id='f1' class="reqAns" type="number" name="Edad" min="1920" max="2003" required /></label><br>
 				<label for='f1'>- Mes de nacimiento:<input id='f112' class="reqAns" type="number" name="Mes" min="1" max="12" required /></label><br>
 				- Sexo: <input id='f2' class="reqAns" type="radio" name="sexo" value="Mujer" style="margin-left: 10px" required> Mujer
@@ -52,7 +55,7 @@
 				- Considera que vive en una zona: <input id='f92' class="reqAns" type="radio" name="pobla" value="Urbana" style="margin-left: 10px">Urbana
 				<input class="reqAns" type="radio" name="pobla" value="Semi" style="margin-left: 10px">Semi-urbana
 				<input class="reqAns" type="radio" name="pobla" value="Rural" style="margin-left: 10px" required />Rural<br>
-				<label for='Fhoras'>- En la última semana, ¿cuántas horas al día (de media) ha permanecido dentro de casa?<input id='Fhoras' class="reqAns" type="number" name="Horas" min="0" max="24" required /></label> <br>
+				<label for='Fhoras'>- En la última semana, ¿cuántas horas al día (de media) ha permanecido dentro de casa?: <input id='Fhoras' class="reqAns" type="number" name="Horas" min="0" max="24" required /></label> <br>
 				 - ¿Con cuántas personas está conviviendo actualmente? Sin incluírse a usted: <input id='f11' class="reqAns" type="radio" name="houseN" value="0" style="margin-left: 10px" required> 0
 				<input id='f11' class="reqAns" type="radio" name="houseN" value="1" style="margin-left: 10px"> 1
 				<input id='f11' class="reqAns" type="radio" name="houseN" value="2" style="margin-left: 10px"> 2
@@ -397,7 +400,7 @@
 				</div>
 
 
-				<li class="vas113" style="padding:10px">¿Ha mantenido contacto físico afectivo (por ej. abrazar, besar, coger de la mano...) con sus seres queridos <strong>en las semanas anteriores a la crisis del coronavirus</strong>? <br>(Siendo 0=No he mantenido ningún contacto físico afectivo
+				<li class="vas113" style="padding:10px">¿Mantenía contacto físico afectivo (por ej. abrazar, besar, coger de la mano...) con sus seres queridos <strong>en las semanas anteriores al inicio de la pandemia</strong>? <br>(Siendo 0=No he mantenido ningún contacto físico afectivo
 						 y 10=He mantenido contacto físico afectivo de forma muy frecuente)</li>
 				<div class="reqAns">
 					<div>
