@@ -25,36 +25,43 @@
 		<form id='fullform' action="../paint/index.html" method="GET">
 
 			<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
-				- ¿Ha cubierto este mismo cuestionario con anterioridad? (entre marzo y agosto) <input id='fase1' class="reqAns" type="radio" name="diagnostico" value="Si" style="margin-left: 10px"> Sí
+				- ¿Ha rellenado este mismo cuestionario con anterioridad? (entre marzo y agosto) <input id='fase1' class="reqAns" type="radio" name="diagnostico" value="Si" style="margin-left: 10px"> Sí
 				<input class="reqAns" type="radio" name="diagnostico" value="No" style="margin-left: 10px" required /> No<br>
 				<label for='f7'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Si ha respondido "Sí", por favor indique el número de identificación que le dimos la vez anterior: <input type="number" name="ID_fase1" min="0" max="999999999"/></label><br>
-				<label for='f1'>- Año de nacimiento:<input id='f1' class="reqAns" type="number" name="Edad" min="1920" max="2003" required /></label><br>
-				<label for='f1'>- Mes de nacimiento:<input id='f112' class="reqAns" type="number" name="Mes" min="1" max="12" required /></label><br>
+				<label for='f1'>- Año de nacimiento: <input id='f1' class="reqAns" type="number" name="Edad" min="1920" max="2003" required /></label><br>
+				<label for='f1'>- Mes de nacimiento: <input id='f112' class="reqAns" type="number" name="Mes" min="1" max="12" required /></label><br>
 				- Sexo: <input id='f2' class="reqAns" type="radio" name="sexo" value="Mujer" style="margin-left: 10px" required> Mujer
 				<input id='f2' class="reqAns" type="radio" name="sexo" value="Hombre" style="margin-left: 10px"> Hombre
 				<input id='f2' class="reqAns" type="radio" name="sexo" value="Otro" style="margin-left: 10px"> Otro<br>
+				<label for='f9'>- Código Postal: <input id='f9' class="reqAns" type="number" name="CP" max="99999" size=5 required /></label> <br>
+				- Considera que vive en una zona: <input id='f92' class="reqAns" type="radio" name="pobla" value="Urbana" style="margin-left: 10px">Urbana
+				<input class="reqAns" type="radio" name="pobla" value="Semi" style="margin-left: 10px">Semi-urbana
+				<input class="reqAns" type="radio" name="pobla" value="Rural" style="margin-left: 10px" required />Rural<br>
 				- Nivel de estudios: <input id='f3' class="reqAns" type="radio" name="estudios" value="Ninguno" style="margin-left: 10px" required> Ninguno
 				<input id='f3' class="reqAns" type="radio" name="estudios" value="Elementales" style="margin-left: 10px"> Elementales
 				<input id='f3' class="reqAns" type="radio" name="estudios" value="Bachillerato" style="margin-left: 10px"> Bachillerato
 				<input id='f3' class="reqAns" type="radio" name="estudios" value="FormacionProfesional" style="margin-left: 10px"> Formación Profesional
 				<input id='f3' class="reqAns" type="radio" name="estudios" value="Universitarios" style="margin-left: 10px"> Universitarios<br>
-
-				<label for='f4'>- Peso (en Kg):<input id='f4' class="reqAns" type="number" name="Peso" min="20" max="300" required /></label> <br>
+				<br>- Situación laboral actual: <br><input id='f12' class="reqAns" type="radio" name="trabajo" value="0" style="margin-left: 10px" required> Empleado/a a tiempo completo<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="1" style="margin-left: 10px"> Empleado/a a tiempo parcial<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="2" style="margin-left: 10px"> Trabajador/a por cuenta propia<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="3" style="margin-left: 10px"> Desempleado/a<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="4" style="margin-left: 10px"> Jubilado/a<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="5" style="margin-left: 10px"> Incapacidad permanente<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="6" style="margin-left: 10px"> Trabajador/a doméstico o cuidador/a<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="7" style="margin-left: 10px"> Estudiante<br>
+				<input id='f12' class="reqAns" type="radio" name="trabajo" value="8" style="margin-left: 10px"> Otro<br>
+				<label for='f4'>- Peso (en Kg): <input id='f4' class="reqAns" type="number" name="Peso" min="20" max="300" required /></label> <br>
 				<label for='f5'>- Estatura (en cms):<input id='f5' class="reqAns" type="number" name="Estatura" min="50" max="250" required /></label> <br>
+				<label for='f8'>- Número medio de minutos en los que realiza deporte/actividad física al día: <input id='f8' class="reqAns" type="number" name="Deporte" min="0" max="500" required /></label><br>
 				- ¿Tiene diagnóstico de fibromialgia hecho por un profesional médico? <input id='f6' class="reqAns" type="radio" name="diagnostico" value="Si" style="margin-left: 10px"> Sí
 				<input class="reqAns" type="radio" name="diagnostico" value="No" style="margin-left: 10px" required /> No<br>
-				<label for='f7'>Si ha respondido "Sí" a la pregunta anterior:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¿Cuántos años tenía cuando fué diagnosticada de fibromialgia?:<input type="number" name="AnosD" min="0" max="99"/></label><br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¿Cuántos años tenía cuando comenzó a padecer síntomas de la fibromialgia:<input type="number" name="AnosS" min="0" max="99"/></label><br><br>
-				<label for='f8'>- Número medio de minutos en los que realiza deporte/actividad física al día:<input id='f8' class="reqAns" type="number" name="Deporte" min="0" max="500" required /></label><br>
-				<label for='f9'>- Código Postal:<input id='f9' class="reqAns" type="number" name="CP" max="99999" size=5 required /></label> <br>
-
+				<label for='f7'>   Si ha respondido "Sí" a la pregunta anterior: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¿Cuántos años tenía cuando fue diagnosticada/o de fibromialgia? <input type="number" name="AnosD" min="0" max="99"/></label><br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¿Cuántos años tenía cuando comenzó a padecer síntomas de la fibromialgia? <input type="number" name="AnosS" min="0" max="99"/></label><br><br>
 				<label for='f10'>- Nivel de consumo de medicación:<br> <input id='f10' class="reqAns" type="radio" name="meds" value="No" style="margin-left: 10px" required> No tomo o apenas tomo medicación para el dolor, solamente en ocasiones puntuales. </label>
 				<label for='f10'><input id='f10' class="reqAns" type="radio" name="meds" value="Poco" style="margin-left: 10px"> Tomo medicación para el dolor o la fibromialgia de forma habitual, aunque creo que es una cantidad moderada.</label>
 				<label for='f10'><input id='f10' class="reqAns" type="radio" name="meds" value="Mucho" style="margin-left: 10px"> Tomo constantemente mucha medicación para paliar el dolor o los síntomas de la fibromialgia.</label><br>
 				&nbsp;&nbsp;Si lo desea, puede escribir aquí que medicación consume actualmente: <input id='f11' type="text" name="medsE" size=50><br>
-				- Considera que vive en una zona: <input id='f92' class="reqAns" type="radio" name="pobla" value="Urbana" style="margin-left: 10px">Urbana
-				<input class="reqAns" type="radio" name="pobla" value="Semi" style="margin-left: 10px">Semi-urbana
-				<input class="reqAns" type="radio" name="pobla" value="Rural" style="margin-left: 10px" required />Rural<br>
 				<label for='Fhoras'>- En la última semana, ¿cuántas horas al día (de media) ha permanecido dentro de casa?: <input id='Fhoras' class="reqAns" type="number" name="Horas" min="0" max="24" required /></label> <br>
 				 - ¿Con cuántas personas está conviviendo actualmente? Sin incluírse a usted: <input id='f11' class="reqAns" type="radio" name="houseN" value="0" style="margin-left: 10px" required> 0
 				<input id='f11' class="reqAns" type="radio" name="houseN" value="1" style="margin-left: 10px"> 1
@@ -63,16 +70,6 @@
 				<input id='f11' class="reqAns" type="radio" name="houseN" value="4" style="margin-left: 10px"> 4
 				<input id='f11' class="reqAns" type="radio" name="houseN" value="5" style="margin-left: 10px"> 5
 				<input id='f11' class="reqAns" type="radio" name="houseN" value="6" style="margin-left: 10px"> Más de 5<br>
-				<br>- Situación laboral actual: <br><input id='f12' class="reqAns" type="radio" name="trabajo" value="0" style="margin-left: 10px" required> Empleado/a a tiempo completo<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="1" style="margin-left: 10px"> Empleado/a a tiempo parcial<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="2" style="margin-left: 10px"> Trabajador/a por cuenta propia<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="3" style="margin-left: 10px"> Desempleado/a<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="4" style="margin-left: 10px"> Jubilado/a<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="5" style="margin-left: 10px"> Incapacidad permanente<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="6" style="margin-left: 10px"> Trabajador/a doméstico o cuidador/a<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="7" style="margin-left: 10px"> Estudiante<br>
-			 <input id='f12' class="reqAns" type="radio" name="trabajo" value="8" style="margin-left: 10px"> Otro<br>
-
 			 <br>- ¿Continúa trabajando después de las restricciones impuestas por el coronavirus?: <br><input id='f13' class="reqAns" type="radio" name="trabajo2" value="0" style="margin-left: 10px" required> Si, por teletrabajo/trabajo en casa<br>
 			<input id='f13' class="reqAns" type="radio" name="trabajo2" value="1" style="margin-left: 10px"> Sí, continúo trabajando presencialmente<br>
 			<input id='f13' class="reqAns" type="radio" name="trabajo2" value="2" style="margin-left: 10px"> Sí, continúo trabajando presencialmente, pero con restricciones<br>
@@ -98,7 +95,31 @@
 			<input id='f17' class="reqAns" type="radio" name="contagio" value="3" style="margin-left: 10px"> Sí, me he contagiado y me he curado<br>
 			<input id='f17' class="reqAns" type="radio" name="contagio" value="4" style="margin-left: 10px"> Sí, me he contagiado y aún no me he curado<br>
 			<input id='f17' class="reqAns" type="radio" name="contagio" value="5" style="margin-left: 10px"> No lo sé<br>
-
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;- En caso de que haya padecido COVID-19, se podría decir que sus síntomas fueron: <br><input id='f18' type="radio" name="SintomsContagio" value="0" style="margin-left:40px"> Inexistentes
+			<input id='f18' type="radio" name="SintomsContagio" value="1" style="margin-left: 20px"> Leves
+			<input id='f18' type="radio" name="SintomsContagio" value="1" style="margin-left: 20px"> Moderados
+			<input id='f18' type="radio" name="SintomsContagio" value="1" style="margin-left: 20px"> Graves
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;- En caso de que haya padecido COVID-19 ¿en qué mes ha sido?  <select name="MCovid" id="monthCovid">
+			<option value="sel">seleccione...</option>
+	    <option value="ene">Enero</option>
+	    <option value="feb">Febrero</option>
+	    <option value="mar">Marzo</option>
+	    <option value="abr">Abril</option>
+			<option value="may">Mayo</option>
+	    <option value="jun">Junio</option>
+	    <option value="jul">Julio</option>
+	    <option value="ago">Agosto</option>
+			<option value="sep">Septiembre</option>
+	    <option value="oct">Octubre</option>
+	    <option value="nov">Noviembre</option>
+	    <option value="dic">Diciembre</option>
+	  </select>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;- En caso de que haya padecido COVID-19 ¿fue hospitalizada/o? <input id='HospCov' type="radio" name="HospCovid" value="No" style="margin-left:10px"> No
+		<input id='HospCov' type="radio" name="HospCovid" value="Si" style="margin-left:10px"> Sí
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;- En caso de que haya padecido COVID-19 ¿le ha quedado alguna secuela? <br><input id='secu' type="radio" name="secuelaCov" value="0" style="margin-left:40px"> Sin secuelas
+		<input id='secu' type="radio" name="secuelaCov" value="1" style="margin-left:20px"> Leves
+		<input id='secu' type="radio" name="secuelaCov" value="1" style="margin-left:20px"> Moderadas
+		<input id='secu' type="radio" name="secuelaCov" value="1" style="margin-left:20px"> Graves
 			</fieldset>
 				<fieldset style="padding:25px; margin: 2em;border-width: 2px; border-color: black; border-style:solid;">
 					<p>Señale la categoría que mejor describa sus habilidades o sentimientos<strong> durante la última semana</strong>.
